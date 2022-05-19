@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=5"/>
 
+    <link href="style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,15 +17,21 @@
 <body>
     <!-- navbar -->
     <nav class="navbar-container">
-        <a href="#" class="navbar-logo">
-            Edie
-        </a>
+        <div class="nav-flex">
+            <a href="#" class="navbar-logo">
+                Edie
+            </a>
+            <button class="nav-toggle">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+       
         <ul class="navbar-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Our Works</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Services</a></li>
+            <li class="nav-item"><a href="#">Our Works</a></li>
+            <li class="nav-item"><a href="#">Clients</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
         </ul>
     </nav>
     <!-- hero section -->
@@ -157,4 +164,6 @@
         </div>
         <p>created by malgo-slota - devChallenges.io</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>

@@ -1,0 +1,99 @@
+*, *::before, *::after {
+        color: #333333;
+        margin: 0px;   
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+body {
+        font-family: "Poppins", sans-serif;
+        background: #FFF;
+      }
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-container{
+    padding: 1em;
+    
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: none;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    background: none;
+}
+
+/* hamburger */
+.hamburger {
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 4px;
+    width: 35px;
+    border-radius: 20%;
+    background: black;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-10px);
+}
+
+.hamburger::after {
+    transform: translateY(6px);
+}
+/* end of hamburger */
+
+.navbar-links{
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.navbar-links--visible{
+    visibility: visible;
+    height: auto;
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+
+.nav-item{
+    padding: 2em;
+    font-size: 1.5em;
+}
+
+.nav-item:hover {
+    font-size: 2em;
+    transition: all 0.3s ease-in-out;
+} 
