@@ -81,7 +81,6 @@ section{
     transform: translateY(6px);
 }
 /* end of hamburger */
-
 .navbar-links{
     visibility: hidden;
     height: 0;
