@@ -1,8 +1,8 @@
 *, *::before, *::after {
-        color: #333333;
         margin: 0px;   
         padding: 0;
         box-sizing: border-box;
+         color: #333333;
     }
 
 body {
@@ -18,9 +18,17 @@ a {
     text-decoration: none;
 }
 
+section{
+    margin: 0em 1em;
+}
+
+.section-title{
+    margin: 4em 1em 4em 1em;
+}
+
+/* nav */
 .navbar-container{
     padding: 1em;
-    
 }
 
 .nav-flex {
@@ -94,6 +102,251 @@ a {
 }
 
 .nav-item:hover {
-    font-size: 2em;
-    transition: all 0.3s ease-in-out;
+    font-size: 1.6em;
+    transition: all 0.5s ease-in-out;
 } 
+
+/* section hero */
+.hero-txt, .hero-contact-container{
+    margin: 1em 1em;
+}
+
+.hero-txt > p {
+    color: hsla(202, 71%, 52%, 1);
+}
+
+.hero-banner{
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.hero-contact-container > p {
+    margin: 1.4em 0;
+}
+    /* input field */
+.input-label{
+    color: hsla(0, 0%, 51%, 1);
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-left: 0.4em;
+}
+
+.input-wrapper{
+    height: 50px;
+    background: hsla(0, 0%, 95%, 1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-email{
+   flex-grow: 2;
+   padding: 1em;
+   border: none;
+   background: transparent;
+   font-size: 1em;
+   outline: none;
+}
+
+.input-email::placeholder{
+    color: hsla(0, 0%, 74%, 1);
+    font-family: "Poppins", sans-serif;
+}
+
+.btn--submit {
+    background-color: hsla(202, 71%, 52%, 1);
+    border: none;
+    border-radius: 12px;
+    padding: 0 2em;
+    margin-right: 0.2em;
+    height: 90%;
+    color:hsla(0, 0%, 95%, 1);
+}
+
+.btn--submit:hover{
+    background-color: hsla(0, 0%, 74%, 1);
+    color: hsla(0, 0%, 51%, 1);
+}
+
+/* section offers */
+.offer-container {
+     margin: 1em 0em;
+}
+
+.offer-item{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1.4em;
+    padding: 2em 1em;
+}
+
+.offer-item:hover{
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    border-radius: 24px;
+}
+
+.blue-icon,
+.green-icon,
+.red-icon{
+    padding: 0.5em;
+    border-radius: 10px;
+    color: white;
+}
+
+.blue-icon{
+    background: hsla(202, 71%, 52%, 1);
+}
+.green-icon{
+    background: hsla(145, 63%, 42%, 1);
+}
+.red-icon{
+    background: hsla(0, 79%, 63%, 1);
+}
+
+.btn{
+    border: none;
+    padding: 0.8em 1em;
+    border-radius: 10px;
+    color: hsla(0, 0%, 51%, 1);
+}
+
+.btn:hover{
+    background: hsla(202, 71%, 52%, 1);
+    color: white;
+}
+
+/* section projects */
+.projects-grid{
+    display: grid;
+    gap: 1.8em;
+}
+
+.projects-grid > div > img {
+    border-radius: 24px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.projects-grid > div > p {
+    color: hsla(0, 0%, 51%, 1);
+    font-weight: 300;
+}
+
+.see-more-btn {
+    background: none;
+    border: none;
+    color:hsla(202, 71%, 52%, 1);
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+
+.see-more-btn > span {
+    color:hsla(202, 71%, 52%, 1);
+}
+
+/* section team */
+.team-section-txt{
+    margin-top: 4em;
+}
+
+.team-section-txt > p:nth-child(1){
+    color: hsla(0, 79%, 63%, 1);
+}
+
+.team-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.team-grid-item{
+    width: 100%;
+    border-radius: 24px;
+    padding: 0.4em;
+}
+
+.item-1{
+    grid-column: 2;
+}
+
+.item-2{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.item-3{
+    grid-row: 2 / 4;
+}
+/* section opinion */
+.opinion-txt{
+    margin-top: 4em;
+    font-size: 1.4em;
+}
+
+.person-card-flex {
+    margin: 2.5em 0;
+    display: flex;
+    gap: 2em;
+}
+
+.person-card-flex > img {
+    border-radius: 14px;
+    width: 20%;
+}
+
+.person-card-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.person-card-txt > p{
+    font-weight: 300;
+    color: hsla(0, 0%, 51%, 1);
+}
+
+/* footer */
+footer {
+    background: hsla(248, 35%, 8%, 1);
+    color: hsla(0, 0%, 95%, 1);
+    padding: 2em;   
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60vh;
+}
+
+.footer-nav > li > a, 
+.navbar-logo--footer,
+.credits {
+    color: hsla(0, 0%, 95%, 1);
+}
+
+.footer-nav {
+    line-height: 2.2em;
+}
+
+.instagram-icon:hover,
+.linkedin-icon:hover,
+.twitter-icon:hover {
+   filter:  invert(0.4) 
+            sepia(1) 
+            saturate(2.7) 
+            hue-rotate(165.6deg) 
+            brightness(0.85);
+    transition: all 0.3s ease-out;
+}
+
+.credits{
+    margin-top: 2em;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8em;
+}

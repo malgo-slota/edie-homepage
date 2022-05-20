@@ -4,15 +4,11 @@
     <meta charset="utf-8"/>
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=5"/>
-
+      content="width=device-width, initial-scale=1, maximum-scale=5"/>  
     <link href="style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <title>Edie</title>
-
 </head>
 <body>
     <!-- navbar -->
@@ -24,8 +20,7 @@
             <button class="nav-toggle">
                 <span class="hamburger"></span>
             </button>
-        </div>
-       
+        </div>  
         <ul class="navbar-links">
             <li class="nav-item"><a href="#">Home</a></li>
             <li class="nav-item"><a href="#">Services</a></li>
@@ -40,130 +35,124 @@
             <p class="hero-subtitle">Unhappy with your website?</p>
             <h1 class="hero-title">We create beautiful<br>and fast web services</h1>     
         </div>
-        <img class="banner" src="img/heroImage.jpg"> 
-        
+        <img class="hero-banner" src="img/heroImage.jpg"> 
         <div class="hero-contact-container">
             <h1>Story, emotion and purpose</h1>
-            <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+            <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>  
             <div>
-                <label>Want us to contact you?</label>
-                <input type="email">
-                <input type="submit">
+                <p class="input-label">Want us to contact you?</p>
+                <div class="input-wrapper">
+                    <input type="email" class="input-email" placeholder="Email">
+                    <input type="submit" class="btn--submit" value="Join">
+                </div>
             </div>
         </div>   
     </section>   
     <!-- three columns with offers -->
     <section>
-        <h1 class="offer-title">We offer high demand services</h1>
+        <h1 class="section-title">We offer high demand services</h1>
         <div class="offer-container">
-            <div>
-                <span class="material-icons">edit</span>
+            <div class="offer-item">
+                <span class="material-icons blue-icon">edit</span>
                 <h2>UI/UX Design</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-                <button>Get started</button>
+                <button class="btn">Get started</button>
             </div>
-
-            <div>
-                <span class="material-icons">code</span>
+            <div class="offer-item">
+                <span class="material-icons green-icon">code</span>
                 <h2>Front End</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-                <button>Get started</button>
+                <button class="btn">Get started</button>
             </div>
-
-            <div>
-                <span class="material-icons">list</span>
+            <div class="offer-item">
+                <span class="material-icons red-icon">list</span>
                 <h2>Back End</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-                <button>Get started</button>
+                <button class="btn">Get started</button>
             </div>
         </div>
     </section>
-    
     <!-- finished projects grid section -->
     <section>
-        <h2>Good design means good business</h2>
-        <div class="good-design-grid">
+        <h2 class="section-title">Good design means good business</h2>
+        <div class="projects-grid">
             <div>
                 <img src="img/smarthome.jpg">
                 <p>Full stack application</p>
                 <h3>Smart home dashboard</h3>
             </div>
-
             <div>
                 <img src="img/onboard.png">
                 <p>UX/UI design</p>
                 <h3>Onboard application</h3>
             </div>
-
             <div>
                 <img src="img/booking.png">
                 <p>Mobile application</p>
                 <h3>Booking system</h3>
             </div>
-
             <div>
                 <img src="img/juice-product.png">
                 <p>Front End application</p>
                 <h3>Juice product homepage</h3>
-            </div>
-            
-            <button>see more -></button>
-
+            </div>        
+            <button class="see-more-btn">
+                see more
+                <span class="material-icons">arrow_right_alt</span>
+            </button>
         </div>
     </section>
-    
     <!-- team presentation section -->
     <section>
-        <div>
+        <div class="team-section-txt">
             <p>Meet the team</p>
-            <h2>We are chilled and a laidback team</h2>
+            <h1>We are chilled and a laidback team</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div>
-            <img src="img/person1.png">
-            <img src="img/person2.png">
-            <img src="img/person3.png">
+        <div class="team-grid">
+            <img  class="team-grid-item item-1" src="img/person1.png">
+            <img class="team-grid-item item-2" src="img/person2.png">
+            <img class="team-grid-item item-3" src="img/person3.png">
         </div>
     </section>
     <!-- opinion section -->
     <section>
-        <h2>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h2>
-        <div>
+        <p class="opinion-txt">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</p>
+        <div class="person-card-flex">
             <img src="img/person4.png">
-            <div>
-                <p>Carlos Tran</p>
+            <div class="person-card-txt">
+                <h3>Carlos Tran</h3>
                 <p>The decorate Gatsby</p> 
             </div>       
         </div>
     </section>
     <!-- footer -->
     <footer>
-        <div>
-            <ul>
+        <div class="footer-flex">
+            <ul class="footer-nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Our Works</a></li>
                 <li><a href="#">Clients</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        
             <div>
-                <h2>Edie</h2>
-                <div>
-                    <img src="img/instagram.svg">
-                    <img src="img/linkedin.svg">
-                    <img src="img/twitter.svg">
+                <h2 class="navbar-logo navbar-logo--footer">Edie</h2>
+                <div class="sm-icons">
+                    <img class="instagram-icon" src="img/instagram.svg">
+                    <img class="linkedin-icon" src="img/linkedin.svg">
+                    <img class="twitter-icon" src="img/twitter.svg">
                 </div>
             </div>
-
             <div>
-                <label>Want us to contact you?</label>
-                <input type="email">
-                <input type="submit">
+                <p class="input-label">Want us to contact you?</p>
+                <div class="input-wrapper input-wrapper--footer">
+                    <input type="email" class="input-email" placeholder="Email">
+                    <input type="submit" class="btn--submit" value="Join">
+                </div>
             </div>
         </div>
-        <p>created by malgo-slota - devChallenges.io</p>
+        <p class="credits">created by malgo-slota - devChallenges.io</p>
     </footer>
-
     <script src="index.js"></script>
 </body>
