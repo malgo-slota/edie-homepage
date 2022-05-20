@@ -33,7 +33,6 @@ Users should be able to:
 
 This project is in construction state, further plans contain:
 
-- going to certian sections by navigation
 - refactor CSS code if needed
 
 ## Author
